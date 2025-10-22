@@ -32,7 +32,7 @@ redis-clone/
 ## Getting Started
 
 ### **Prerequisites**
-- Go 1.20 or higher
+- Go 1.22 or higher
 - redis-cli installed
 
 ### **Clone the Repository**
@@ -44,7 +44,7 @@ cd redis-clone
 
 Run Server
 ```
-go run main.go resp.go handlers.go
+go run .
 ```
 
 Connect Using Redis CLI in antoher terminal
@@ -55,7 +55,7 @@ redis-cli
 In redis-cli try
 ```
 PING
-SET {your_name} Awesome!
+SET {your_name} Awesome!  
 GET {your_name}
 ```
 
